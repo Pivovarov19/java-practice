@@ -1,3 +1,4 @@
+
 package com.rakovets.course.practice.module4;
 
 import java.util.Scanner;
@@ -17,7 +18,7 @@ public class Task01 {
 		Scanner scanner = new Scanner(System.in);
 
 		// Код необходимый для тестирования, не изменять
-		int rows = (args.length!=1) ? scanner.nextInt():Integer.parseInt(args[0]);
+		int rows = (args.length != 1) ? scanner.nextInt() : Integer.parseInt(args[0]);
 
 		//TODO
 		// Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
@@ -29,5 +30,4 @@ public class Task01 {
 		System.out.print(i);
 
 	}
-
 }

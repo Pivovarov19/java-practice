@@ -1,7 +1,10 @@
 package com.rakovets.course.practice.module4;
 
+<<<<<<< HEAD
 import org.w3c.dom.ls.LSOutput;
 
+=======
+>>>>>>> 85db1f092cebca7678c92f05227d1e98d7045d17
 import java.util.Scanner;
 
 /**
