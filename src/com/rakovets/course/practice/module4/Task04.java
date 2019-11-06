@@ -1,10 +1,4 @@
 package com.rakovets.course.practice.module4;
-
-<<<<<<< HEAD
-import org.w3c.dom.ls.LSOutput;
-
-=======
->>>>>>> 85db1f092cebca7678c92f05227d1e98d7045d17
 import java.util.Scanner;
 
 /**
@@ -32,11 +26,13 @@ public class Task04 {
 		//TODO
 		// Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
 		// Для проверки решения необходимо запустить @Test для данного class (в директории test)+
-		regenerationPercentFromCurrentHealth = regenerationPercentFromCurrentHealth / 100;
+		regenerationPercentFromCurrentHealth /= 100;
 		int i = 1;
+		double hp = healthPoints;
 		while (hoursAfterRespawn >= i ) {
-			healthPoints = (int)regenerationPercentFromCurrentHealth * healthPoints;
+			hp *= (1 + regenerationPercentFromCurrentHealth);
+			i++;
 		}
-		System.out.println( healthPoints );
+		System.out.println( (int)hp );
 	}
 }
