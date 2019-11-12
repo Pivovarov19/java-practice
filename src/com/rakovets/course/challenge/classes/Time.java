@@ -15,12 +15,12 @@ public class Time {
         return this.hours;
     }
 
-    /*int setHours(int hours){
+    void setHours(int hours){
         this.hours = hours;
-        return this.hours
-    }*/
+    }
 
     void display(){
-        System.out.printf("Time: %d:%d:%d", this.hours, this.minutes, this.seconds);
+        System.out.printf("Time: %d:%d:%d \n", this.hours, this.minutes, this.seconds);
+        System.out.print(getHours());
     }
 }
