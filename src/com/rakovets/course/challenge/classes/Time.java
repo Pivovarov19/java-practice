@@ -11,16 +11,33 @@ public class Time {
         this.seconds = seconds;
     }
 
+    void setHours(){
+        this.hours = hours;
+    }
+
     int getHours(){
         return this.hours;
     }
 
-    void setHours(int hours){
-        this.hours = hours;
+
+    void setMinutes() {
+        this.minutes = minutes;
+    }
+
+    int getMinutes() {
+        return this.minutes;
+    }
+
+    void setSeconds() {
+        this.seconds = seconds;
+    }
+
+    int getSeconds() {
+        return this.seconds;
     }
 
     void display(){
         System.out.printf("Time: %d:%d:%d \n", this.hours, this.minutes, this.seconds);
-        System.out.print(getHours());
+        //System.out.println(getSeconds());
     }
 }
