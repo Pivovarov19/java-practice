@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.SplitPane?>
@@ -17,8 +18,9 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox  prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogInController">
   <children>
+      <TextArea prefHeight="52.0" prefWidth="272.0" />
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="File">
@@ -62,7 +64,7 @@
       <items>
         <AnchorPane prefHeight="276.0" prefWidth="331.0">
           <children>
-            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Enter Your User ID Here:" textAlignment="CENTER" wrapText="false">
+            <Label fx:id="logId" alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="User ID" textAlignment="CENTER" wrapText="false">
               <font>
                 <Font size="18.0" fx:id="x1" />
               </font>
@@ -72,11 +74,11 @@
             </Label>
               <AnchorPane layoutX="454.0" layoutY="4.0" prefHeight="166.0" prefWidth="529.0">
                 <children>
-                  <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Enter Your Password Here:" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                        <TextArea layoutX="14.0" layoutY="83.0" prefHeight="52.0" prefWidth="272.0" />
+                  <Label fx:id="passId" alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Password" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                        <PasswordField fx:id="password" layoutX="14.0" layoutY="83.0" prefHeight="52.0" prefWidth="272.0" />
                 </children>
               </AnchorPane>
-                  <TextArea layoutX="14.0" layoutY="87.0" prefHeight="52.0" prefWidth="272.0" />
+                  <TextArea fx:id="logIn" layoutX="14.0" layoutY="87.0" prefHeight="52.0" prefWidth="272.0" />
           </children>
         </AnchorPane>
       </items>
@@ -110,7 +112,7 @@
                         <Color blue="0.624" green="0.624" red="0.624" fx:id="x6" />
                      </textFill>
                   </Label>
-                  <Button layoutX="387.0" layoutY="162.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="210.0" text="Log In!" />
+                  <Button onAction="#onLogInClicked" layoutX="387.0" layoutY="162.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="210.0" text="Log In!" />
         </children>
       </AnchorPane>
     </content>
