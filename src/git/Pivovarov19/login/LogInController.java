@@ -1,4 +1,4 @@
-package sample;
+package git.Pivovarov19.login;
 
 import javafx.event.Event;
 import javafx.fxml.FXML;
