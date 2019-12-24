@@ -28,5 +28,10 @@ public class Task11 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        System.out.println(Character.isDigit(letter));
+        char  character = 'f';
+        if ('1' <=  character && character <= '0') {
+            System.out.println("is digit");
+        } else if ()
     }
 }
